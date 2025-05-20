@@ -10,6 +10,9 @@ body {
 	overflow-x: hidden;
 	width: 100%;
 	min-height: 100dvh;
+	background: #fffc00;
+	background: -webkit-linear-gradient(to top, #ffffff, #fcd022);
+	background: linear-gradient(to bottom, #ffffff, #fcd022);
 }
 
 img {
@@ -30,7 +33,7 @@ img {
 	background: -webkit-linear-gradient(to right, #f3f9a7, #fcd022);
 	background: linear-gradient(to right, #f3f9a7, #fcd022);
 	border: 1px solid #333;
-	width: 50%;
+	width: 50vw;
 	border-top-right-radius: 40px;
 	margin: 0 auto;
 }
@@ -103,4 +106,27 @@ h2 {
 	color: #f1c100;
 	background-color: #1d1d1d;
 	padding: 5px;
+}
+
+@media (max-width: 1180px) {
+	.buttons {
+		flex-direction: column;
+		width: 40vw;
+	}
+}
+@media (max-width: 850px) {
+	button {
+		font-size: 25px;
+		padding: 10px;
+		margin: 20px;
+	}
+
+	.time {
+		font-size: 45px;
+	}
+
+	#pomiary {
+		padding: 10px 15px;
+		font-size: 20px;
+	}
 }
